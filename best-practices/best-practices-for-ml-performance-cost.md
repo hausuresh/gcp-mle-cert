@@ -1,7 +1,8 @@
 # Best practices for performance and cost optimization for machine learning
-https://cloud.google.com/architecture/best-practices-for-ml-performance-cost
-Best pratice of architecture
-  https://cloud.google.com/architecture
+> References:
+  - https://cloud.google.com/architecture/best-practices-for-ml-performance-cost
+  - Best pratice of architecture : https://cloud.google.com/architecture
+  - Supported models : https://cloud.google.com/tpu/docs/tutorials/supported-models
 
 > Using Big Query ML rather than using Vertex AI if batch-prediction only
 
@@ -40,4 +41,21 @@ Best pratice of architecture
 - **Logs** are written to **Cloud Logging**
 - Monitor your Dataflow jobs
 
+## Training with Vertex AI custom Training
+- **trade-off** between model **accuracy** and **size** for your task (more complex -> more time predict & more model size)
+- right machine configuration for your training characteristics
+- **small datasets** (can fit all of your data in memory), use a **single large machine** (rather than using distributed training)
+- Scale up before scaling out
+- For **large datasets**, use distributed training
+- Distributed training: 
+  - Asynchronous: Increase the size of the parameter server to increase the bandwidth (because bandwitdth proportional to the size (number of vCPUs) )
+  - Synchronous: Use MultiWorkerMirroredStrategy for distributed training of TensorFlow models
+- Use the tf.data API to best utilize your accelerators
+- Stream data from Cloud Storage for training **scikit-learn models**
 
+  _When you train a scikit-learn model on large datasets, downloading the entire dataset into the training worker and loading it into memory doesn't scale. In these cases, consider using TensorFlow's stream-read/file_io API, which is preinstalled on the worker VM._
+- Using **distributed XGBoost** with large datasets
+- Prepare your environment in a container image
+- Use automatic hyperparameter tuning
+  - enableTrialEarlyStopping to True
+  - maxParallelTrials to be between 2 and maxTrials/2 
