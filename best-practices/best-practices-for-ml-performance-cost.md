@@ -59,3 +59,30 @@
 - Use automatic hyperparameter tuning
   - enableTrialEarlyStopping to True
   - maxParallelTrials to be between 2 and maxTrials/2 
+
+## Serving with Vertex AI Prediction
+- Online Serving
+  - Reduce latency of serving ( usually online serving)
+    - reduced-precision floating-point types (**bfloat16** ...)
+    - post-training **quantization**
+    - TensorFlow Model Optimization Toolkit
+      -  post-training quantization, 
+      -  quantization aware training, 
+      -  model pruning
+  - Manual scaling for highly variable request volume with N1 machines (When auto-scaling couldnt catch-up request volume)
+  - Choose the right machine type for serving
+    - **large models with high traffic** : N1 machines (but do not support scaling down to zero nodes)
+    - **Scaling down to zero node**: mls1-c1-m2 and mls1-c4-m2
+  - Use TF-TRT with NVIDIA GPU accelerators
+  - Use **base64** encoding when **sending images**
+  - Send multiple data points in one request
+    - < 100 data points
+    - < 1.5 Mb size
+  - Request-response logging -> to BigQuery
+---
+- Offline Serving
+  - Using Batch Serving service to saving cost
+  - Increase the batch size for batch prediction jobs
+- Use Cloud Monitoring to configure alerts based on the ML metrics
+
+## Orchestration Pipelines
