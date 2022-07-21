@@ -29,8 +29,15 @@ Best pratice of architecture
 
 ## Data preparation with Dataflow and Apache Beam
 - Experiment with interactive Apache Beam on user-managed notebooks (**before truly running at scale**)
-- Using **Dataflow FlexRS** to reduce cost
-- Using **Dataflow Shuffle** (GroupByKey,CoGroupByKey ) to reduce runtime & cost
-- Use the right machine type for your workload
-- **Disable public IP** addresses of workers to reduce cost (using private IP addresses only) _usePublicIps_
-- 
+- To reduce cost/ runtime
+  - Using **Dataflow FlexRS** 
+  - Using **Dataflow Shuffle** (GroupByKey,CoGroupByKey ) to reduce runtime & cost
+  - Use the right machine type for your workload
+  - **Disable public IP** addresses of workers to reduce cost (using private IP addresses only) _usePublicIps_
+- Avoid **setting num_shards** on output transforms ( = 0, Dataflow will decide how many)
+- Create a **batch of data points and process it as a whole**
+- Preprocess the data once and **save** it as a **TFRecord file** (using for train TF models later)
+- **Logs** are written to **Cloud Logging**
+- Monitor your Dataflow jobs
+
+
