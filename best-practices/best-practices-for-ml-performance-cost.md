@@ -1,4 +1,7 @@
 # Best practices for performance and cost optimization for machine learning
+https://cloud.google.com/architecture/best-practices-for-ml-performance-cost
+Best pratice of architecture
+  https://cloud.google.com/architecture
 
 > Using Big Query ML rather than using Vertex AI if batch-prediction only
 
@@ -23,3 +26,11 @@
 - BigQuery to **explore** and **preprocess** large amounts of data -> Visualize with Notebooks/ Vertex AI
 - BigQuery Storage API to load the data into pandas DataFrames in memory
 - Using tfio.bigquery.BigQueryClient to load into TensorFlow (**if no preprocessing**)
+
+## Data preparation with Dataflow and Apache Beam
+- Experiment with interactive Apache Beam on user-managed notebooks (**before truly running at scale**)
+- Using **Dataflow FlexRS** to reduce cost
+- Using **Dataflow Shuffle** (GroupByKey,CoGroupByKey ) to reduce runtime & cost
+- Use the right machine type for your workload
+- **Disable public IP** addresses of workers to reduce cost (using private IP addresses only) _usePublicIps_
+- 
