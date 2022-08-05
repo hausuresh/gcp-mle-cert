@@ -44,3 +44,14 @@ B. Compare the loss performance for each model on the validation data.
 C. Compare the receiver operating characteristic (ROC) curve for each model using the What-If Tool.
 
 D. Compare the mean average precision across the models using the Continuous Evaluation feature
+
+--- 
+You work for a social media company. You need to detect whether posted images contain cars. Each training example is a member of exactly one class. You have trained an object detection neural network and deployed the model version to AI Platform Prediction for evaluation. Before deployment, you created an evaluation job and attached it to the AI Platform Prediction model version. You notice that the precision is lower than your business requirements allow. How should you adjust the modelג€™s final layer softmax threshold to increase precision?
+
+A. Increase the recall.
+
+B. Decrease the recall.
+
+C. Increase the number of false positives.
+
+D. Decrease the number of false negatives.
