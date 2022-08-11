@@ -59,19 +59,28 @@ B. Decrease the recall.
 C. Increase the number of false positives.
 
 D. Decrease the number of false negatives.
+
 ---
-Question #54Topic 1
+
+Question 54Topic 1
 Your team has been tasked with creating an ML solution in Google Cloud to classify support requests for one of your platforms. You analyzed the requirements and decided to use TensorFlow to build the classifier so that you have full control of the model's code, serving, and deployment. You will use Kubeflow pipelines for the ML platform. To save time, you want to build on existing resources and use managed services instead of building a completely new model. How should you build the classifier?
 A. Use the Natural Language API to classify support requests.
 B. Use AutoML Natural Language to build the support requests classifier.
 C. Use an established text classification model on AI Platform to **perform transfer learning**.
 D. Use an established text classification model on AI Platform **as-is** to classify support requests.
 ---
-Question #55Topic 1
+
+Question 55Topic 1
+
 You recently joined a machine learning team that will soon release a new project. As a lead on the project, you are asked to determine the production readiness of the ML components. The team has already tested features and data, model development, and infrastructure. Which additional readiness check should you recommend to the team?
+
 A. Ensure that training is reproducible.
+
 B. Ensure that all hyperparameters are tuned.
+
 C. Ensure that model performance is monitored.
+
 D. Ensure that feature expectations are captured in the schema.
+
   https://developers.google.com/machine-learning/testing-debugging/pipeline/deploying
 
