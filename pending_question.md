@@ -103,3 +103,27 @@ C. An optimization objective that maximizes the area under the precision-recall 
 D. An optimization objective that maximizes the area under the receiver operating characteristic curve (AUC ROC) value
 
 https://neptune.ai/blog/f1-score-accuracy-roc-auc-pr-auc#:~:text=ROC%20AUC%20vs%20PR%20AUC&text=What%20is%20different%20however%20is,and%20true%20positive%20rate%20TPR.
+
+PR is recommended for high imbalanced than ROC
+
+---
+Question #57Topic 1
+
+Your company manages a video sharing website where users can watch and upload videos. You need to create an ML model to predict which newly uploaded videos will be the most popular so that those videos can be prioritized on your company's website. Which result should you use to determine whether the model is successful?
+
+A. The model predicts videos as popular if the user who uploads them has over 10,000 likes.
+
+B. The model predicts 97.5% of the most popular clickbait videos measured by number of clicks.
+
+C. The model predicts 95% of the most popular videos measured by watch time within 30 days of being uploaded.
+
+D. The Pearson correlation coefficient between the log-transformed number of views after 7 days and 30 days after publication is equal to 0.
+
+> note
+  Ans: C (See https://developers.google.com/machine-learning/problem-framing/framing#quantify-it; though it's just an example.)
+  (A) The absolute number of likes shouldn't be used because no information about subscribers or visits to the website is provided. The number may vary.
+  (B) Clickbait videos are a subset of uploaded videos. Using them is an improper criterion.
+  (D) The coefficient should reach 1. (Ref:https://arxiv.org/pdf/1510.06223.pdf)
+
+![image](https://user-images.githubusercontent.com/39760546/184103423-192c3340-779f-4ccc-bba9-1ae45f9cfa23.png)
+
