@@ -127,3 +127,19 @@ D. The Pearson correlation coefficient between the log-transformed number of vie
 
 ![image](https://user-images.githubusercontent.com/39760546/184103423-192c3340-779f-4ccc-bba9-1ae45f9cfa23.png)
 
+---
+Question #59Topic 1
+
+Your data science team needs to rapidly experiment with various features, model architectures, and hyperparameters. They need to track the accuracy metrics for various experiments and use an ** API to query the metrics over time**. What should they use to track and report their experiments while minimizing manual effort?
+
+A. Use Kubeflow Pipelines to execute the experiments. Export the metrics file, and query the results using the Kubeflow Pipelines API.
+
+B. Use AI Platform Training to execute the experiments. Write the accuracy metrics to BigQuery, and query the results using the BigQuery API.
+
+C. Use AI Platform Training to execute the experiments. Write the accuracy metrics to Cloud Monitoring, and query the results using the Monitoring API.
+
+D. Use AI Platform Notebooks to execute the experiments. Collect the results in a shared Google Sheets file, and query the results using the Google Sheets API.
+
+https://www.kubeflow.org/docs/components/pipelines/sdk/pipelines-metrics/
+
+---
