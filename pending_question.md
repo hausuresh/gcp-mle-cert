@@ -89,3 +89,17 @@ D. Ensure that feature expectations are captured in the schema.
 
   https://developers.google.com/machine-learning/testing-debugging/pipeline/deploying
 
+---
+Question #56Topic 1
+
+You work for a credit card company and have been asked to create a custom fraud detection model based on historical data using AutoML Tables. You need to prioritize detection of fraudulent transactions while minimizing false positives. Which optimization objective should you use when training the model?
+
+A. An optimization objective that minimizes Log loss
+
+B. An optimization objective that maximizes the Precision at a Recall value of 0.50
+
+C. An optimization objective that maximizes the area under the precision-recall curve (AUC PR) value
+
+D. An optimization objective that maximizes the area under the receiver operating characteristic curve (AUC ROC) value
+
+https://neptune.ai/blog/f1-score-accuracy-roc-auc-pr-auc#:~:text=ROC%20AUC%20vs%20PR%20AUC&text=What%20is%20different%20however%20is,and%20true%20positive%20rate%20TPR.
