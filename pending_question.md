@@ -5,6 +5,17 @@
 # Pending question
 
 ---
+You are building a linear regression model on BigQuery ML to predict a customer's likelihood of purchasing your company's products. Your model uses a city name variable as a key predictive component. In order to train and serve the model, your data must be organized in columns. You want to prepare your data using the least amount of coding while maintaining the predictable variables. What should you do?
+
+A. Create a new view with BigQuery that does not include a column with city information.
+
+B. Use Dataprep to transform the state column using a one-hot encoding method, and make each city a column with binary values.
+
+C. Use Cloud Data Fusion to assign each city to a region labeled as 1, 2. 3, 4, or Sr and then use that number to represent the city in the model.
+
+D. Use TensorFlow to create a categorical variable with a vocabulary list Create the vocabulary file, and upload it as part of your model to BigQuery ML
+
+---
 During batch training of a neural network, you notice that there is an **_oscillation_** in the loss. How should you adjust your model to ensure that it converges?
 
 A. Increase the size of the training batch
