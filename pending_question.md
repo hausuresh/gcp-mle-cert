@@ -5,6 +5,23 @@
 # Pending question
 
 ---
+
+You are building a linear model with over 100 input features, all with values between -1 and 1. You suspect that many features are non-informative. You want to remove the non-informative features from your model while keeping the informative ones in their original form. Which technique should you use?
+
+A. Use Principal Component Analysis to eliminate the least informative features.
+B. Use L 1 regularization to reduce the coefficients of uninformative features to 0.
+C. After building your model, use Shapley values to determine which features are the most informative.
+D. Use an iterative dropout technique to identify which features do not degrade the model when removed
+
+---
+You are an ML engineer in the contact center of a large enterprise. You need to build a sentiment analysis tool that predicts customer sentiment from recorded phone conversations. You need to identify the best approach to building a model while ensuring that the gender, age, and cultural differences of the customers who called the contact center do not impact any stage of the model development pipeline and results. What should you do?
+
+**A. Convert the speech to text and extract sentiments based on the sentences**
+B. Convert the speech to text and extract sentiment using syntactical analysis
+C. Extract sentiment directly from the voice recordings
+D. Convert the speech to text and build a model based on the words
+
+---
 You are building a linear regression model on BigQuery ML to predict a customer's likelihood of purchasing your company's products. Your model uses a city name variable as a key predictive component. In order to train and serve the model, your data must be organized in columns. You want to prepare your data using the least amount of coding while maintaining the predictable variables. What should you do?
 
 A. Create a new view with BigQuery that does not include a column with city information.
