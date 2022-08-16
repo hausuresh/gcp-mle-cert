@@ -5,6 +5,19 @@
 # Pending question
 
 ---
+During batch training of a neural network, you notice that there is an **_oscillation_** in the loss. How should you adjust your model to ensure that it converges?
+
+A. Increase the size of the training batch
+
+B. Decrease the size of the training batch
+
+C. Increase the learning rate hyperparameter
+
+D. Decrease the learning rate hyperparameter
+
+
+
+---
 You are going to train a DNN regression model with Keras APJs using this code:
 
 ```python
