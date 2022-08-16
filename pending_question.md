@@ -5,6 +5,35 @@
 # Pending question
 
 ---
+You are going to train a DNN regression model with Keras APJs using this code:
+
+```python
+  model - tf.keras.Sequential() 
+  model.add(tf.keras.layers.Dense(256,use_bias-True,
+    activation-•relu',
+    kernel_initializer-None,
+    kernel_regularizer-None,
+    input_shape-(500,)))
+    model.add(tf.keras.layers.Oropout(rate-0.25))
+    model.add(tf.keras.layers.Oense(
+    128, use_bias-True,
+    activation-•relu',
+    kernel_initializer-'uniform',
+    kernel_regularizer-'12')
+   )
+  model.add(tf.keras.layers.Dropout(rate-0.25))
+  model.add(tf.keras.layers.Dense( 2, use_bias-False, activation-'softriax'))
+  model.compile(loss-mse')
+
+```
+How many trainable weights does your model have? (The arithmetic below is correct.)
+
+A. 501*256+257*128+2 = 161154
+B. 500*256+256*128+128*2 = 161024
+C. 501*256+257*128+128*2 = 161408
+D. 500*256*0(?)25+256*128*0(?)25+128*2 = 4044
+
+---
 You are an ML engineer at a large grocery retailer with stores in multiple regions. You have been asked to create an inventory prediction model. Your modelג€™s features include region, location, historical demand, and seasonal popularity. You want the algorithm to learn from new inventory data on a daily basis. Which algorithms should you use to build the model?
 
 A. Classification
