@@ -5,7 +5,32 @@
 # Pending question
 
 ---
+N7
+You recently designed and built a custom neural network that uses critical dependencies specific to your organization's framework. You need to train the model using a managed training service on Google Cloud. However, the ML framework and related dependencies are not supported by Al Platform Training. Also, both your model and your data are too large to fit in memory on a single machine. Your ML framework of choice uses the scheduler, workers, and servers distribution structure. What should you do?
 
+A. Build your custom container to run jobs on Al Platform Training
+
+B. Use a built-in model available on Al Platform Training
+
+C. Build your custom containers to run distributed training jobs on Al Platform Training
+
+D. Reconfigure your code to a ML framework with dependencies that are supported by Al Platform Training
+
+---
+N6
+You work for a global footwear retailer and need to predict when an item will be out of stock based on historical inventory dat a. Customer behavior is highly dynamic since footwear demand is influenced by many different factors. You want to serve models that are trained on all available data, but track your performance on specific subsets of data before pushing to production. What is the most streamlined and reliable way to perform this validation?
+
+A. Use the TFX Mode!Validator tools to specify performance metrics for production readiness
+
+B. Use k-fold cross-validation as a validation strategy to ensure that your model is ready for production.
+
+C. Use the last relevant week of data as a validation set to ensure that your model is performing accurately on current data.
+
+D. Use the entire dataset and treat the area under the receiver operating characteristics curve (AUC ROC) as the main metric.
+
+
+---
+N5
 You are building a linear model with over 100 input features, all with values between -1 and 1. You suspect that many features are non-informative. You want to remove the non-informative features from your model while keeping the informative ones in their original form. Which technique should you use?
 
 A. Use Principal Component Analysis to eliminate the least informative features.
